@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .myBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .myBtn > button {
+    width: 23rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    background-color: #333333;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .myBtn > button:hover {
+    background-color: #d2ec8b;
+    color: black;
+  }
+
+  @media screen and (min-device-width: 375px) and (max-device-width: 932px) {
+    .myBtn > button {
+      width: 20rem;
+    }
+  }
+}
